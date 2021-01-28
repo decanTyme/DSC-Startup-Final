@@ -1,0 +1,198 @@
+.animate .svg-1 #cloud-1 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: move-cloud-1 40S ease-in infinite;
+}
+
+.animate .svg-1 #cloud-2 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: move-cloud-2 45s ease-in infinite;
+}
+
+.animate .svg-1 #cloud-3 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: move-cloud-3 75s ease infinite;
+}
+
+.animate .svg-1 #cloud-4 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: move-cloud-4 90s ease-in infinite;
+}
+
+.animate .svg-1 #cloud-5 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: move-cloud-5 70s ease-in infinite;
+}
+
+.animate .svg-1 #marker-water {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: move-marker 1s ease-in alternate infinite;
+}
+
+.animate .svg-1 #marker-food {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: move-marker 1s ease-in 0.4s alternate infinite;
+}
+
+.animate .svg-1 #marker-gender {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: move-marker 1s ease-in 0.7s alternate infinite;
+}
+
+.animate .svg-1 #marker-fish {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: move-marker 1s ease-in alternate infinite;
+}
+
+.img-thumbnail {
+  transition: .2s;
+}
+
+.img-thumbnail:hover {
+  transition: 0.2s;
+  padding: 0;
+  border: 0;
+  -webkit-box-shadow: 0px 0px 50px 50px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.10) !important;
+}
+
+div.bg-white {
+  overflow: hidden;
+}
+
+@keyframes move-marker {
+  100% {
+    transform: translateY(-7%);
+  }
+}
+
+@keyframes move-cloud-1 {
+  0% {
+    transform: translateX(0%);
+  }
+  10% {
+    transform: translateX(100%);
+  }
+  11% {
+    opacity: 0;
+  }
+  12% {
+    transform: translateX(-600%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes move-cloud-2 {
+  0% {
+    transform: translateX(0%);
+  }
+  90% {
+    transform: translateX(900%);
+  }
+  91% {
+    opacity: 0.2;
+  }
+  91% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  93% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes move-cloud-3 {
+  0% {
+    transform: translateX(0%);
+  }
+  90% {
+    opacity: 0.4;
+    transform: translateX(800%);
+  }
+  90.1% {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+  93% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes move-cloud-4 {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    opacity: 0.4;
+    transform: translateX(300%);
+  }
+  50.01% {
+    opacity: 0;
+  }
+  50.1% {
+    transform: translateX(-700%);
+  }
+  53% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes move-cloud-5 {
+  0% {
+    transform: translateX(0%);
+  }
+  80% {
+    opacity: 0.5;
+    transform: translateX(800%);
+  }
+  80.01% {
+    opacity: 0;
+  }
+  80.1% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  83% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes blinkingText {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* # sourceMappingURL=index.css.map */
+
