@@ -1,52 +1,85 @@
-.animate .svg-1 #cloud-1 {
+@media (max-width: 992px) {
+  .animate .svg-1 {
+    max-width: 450px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.animate .svg-1 #circle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotate-circle 10s ease-in-out infinite; }
+.animate .svg-1 #hand {
+  transform-box: fill-box;
+  transform-origin: left;
+  animation: move-hand-1 1.5s ease-in-out infinite alternate; }
+.animate .svg-1 #hand-pen {
+  transform-box: fill-box;
+  transform-origin: right;
+  animation: move-hand-2 1.5s ease-in-out infinite alternate; }
+.animate .svg-1 #bar-1 {
+  transform-box: fill-box;
+  animation: bar 2s ease-in-out infinite reverse; }
+.animate .svg-1 #bar-2 {
+  transform-box: fill-box;
+  animation: bar 2s ease-in-out infinite reverse; }
+.animate .svg-1 #bar-3 {
+  transform-box: fill-box;
+  animation: bar 2s ease-in-out infinite reverse; }
+.animate .svg-1 #bar-4 {
+  transform-box: fill-box;
+  animation: bar 2s ease-in-out infinite reverse; }
+
+.animate .svg-2 #cloud-1 {
   transform-box: fill-box;
   transform-origin: center;
   animation: move-cloud-1 40S ease-in infinite;
 }
 
-.animate .svg-1 #cloud-2 {
+.animate .svg-2 #cloud-2 {
   transform-box: fill-box;
   transform-origin: center;
   animation: move-cloud-2 45s ease-in infinite;
 }
 
-.animate .svg-1 #cloud-3 {
+.animate .svg-2 #cloud-3 {
   transform-box: fill-box;
   transform-origin: center;
   animation: move-cloud-3 75s ease infinite;
 }
 
-.animate .svg-1 #cloud-4 {
+.animate .svg-2 #cloud-4 {
   transform-box: fill-box;
   transform-origin: center;
   animation: move-cloud-4 90s ease-in infinite;
 }
 
-.animate .svg-1 #cloud-5 {
+.animate .svg-2 #cloud-5 {
   transform-box: fill-box;
   transform-origin: center;
   animation: move-cloud-5 70s ease-in infinite;
 }
 
-.animate .svg-1 #marker-water {
+.animate .svg-2 #marker-water {
   transform-box: fill-box;
   transform-origin: center;
   animation: move-marker 1s ease-in alternate infinite;
 }
 
-.animate .svg-1 #marker-food {
+.animate .svg-2 #marker-food {
   transform-box: fill-box;
   transform-origin: center;
   animation: move-marker 1s ease-in 0.4s alternate infinite;
 }
 
-.animate .svg-1 #marker-gender {
+.animate .svg-2 #marker-gender {
   transform-box: fill-box;
   transform-origin: center;
   animation: move-marker 1s ease-in 0.7s alternate infinite;
 }
 
-.animate .svg-1 #marker-fish {
+.animate .svg-2 #marker-fish {
   transform-box: fill-box;
   transform-origin: center;
   animation: move-marker 1s ease-in alternate infinite;
@@ -67,6 +100,29 @@
 div.bg-white {
   overflow: hidden;
 }
+
+@keyframes rotate-circle {
+  100% {
+    transform: rotate(360deg); } }
+@keyframes move-hand-1 {
+  100% {
+    transform: rotate(10deg); } }
+@keyframes move-hand-2 {
+  100% {
+    transform: rotate(3deg); } }
+@keyframes bar {
+  0% {
+    transform-origin: right;
+    transform: scaleX(0); }
+  33%, 40% {
+    transform-origin: right;
+    transform: scaleX(1); }
+  80% {
+    transform-origin: left;
+    transform: scaleX(1); }
+  100% {
+    transform-origin: left;
+    transform: scaleX(0); } }
 
 @keyframes move-marker {
   100% {
