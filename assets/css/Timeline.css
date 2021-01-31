@@ -14,7 +14,7 @@
   position: absolute;
   width: 6px;
   background: #226E93;
-  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(34,110,147,1) 5%, rgba(34,110,147,1) 50%, rgba(34,110,147,1) 95%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(34,110,147,1) 4%, rgba(34,110,147,1) 50%, rgba(34,110,147,1) 96%, rgba(255,255,255,1) 100%);
   top: 0;
   bottom: 0;
   left: 50%;
@@ -29,7 +29,7 @@
 }
 
 .time-container::after {
-  content: '';
+  content: ''; 
   position: absolute;
   width: 25px;
   height: 25px;
@@ -85,6 +85,7 @@
   position: relative;
   border-radius: 6px;
   transform: scale(0.9);
+  transition: 0.9s;
 }
 
 .time-content-hover {
@@ -92,13 +93,13 @@
   transition: 0.6s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .timeline::after {
     left: 31px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .time-container {
     width: 100%;
     padding-left: 70px;
@@ -106,7 +107,14 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 922px) {
+  .time-content {
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
   .time-container::before {
     left: 60px;
     border: medium solid white;
@@ -115,13 +123,13 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .left::after, .right::after {
     left: 18px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .right {
     left: 0%;
   }

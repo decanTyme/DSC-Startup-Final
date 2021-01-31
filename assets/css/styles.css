@@ -33,6 +33,41 @@ h1,h2 {
   border: 1px solid #226E93;
 }
 
+#eligibility ol {
+  padding-right: 1.5rem;
+}
+
+@media (max-width:768px) {
+  #schedule .time-body {
+    font-size: 0.9rem;
+  }
+
+  #eligibility ol {
+    padding-right: 2rem;
+    font-size: 0.9rem;
+  }
+
+  #criteria h4 {
+    font-size: large;
+  }
+
+  #criteria table {
+    font-size: 0.9rem;
+  }
+
+  #get-connected p.card-text {
+    font-size: 0.9rem;
+  }
+
+  #faqs div.panel {
+    font-size: 0.9rem;
+  }
+
+  #community-guidelines {
+    font-size: 0.9rem;
+  }
+}
+
 @media (min-width:768px) {
   .snap-in {
     scroll-snap-align: start;
@@ -104,9 +139,5 @@ a:hover {
 .community-guideline {
   transform: scale(1);
   transition: .3s ease-in-out;
-}
-
-.community-guideline:hover {
-  transform: scale(1.1);
 }
 
