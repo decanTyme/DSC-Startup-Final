@@ -1,6 +1,6 @@
 .blinking {
   font-size: 35px;
-  animation: blinkingText 1.2s infinite;
+  animation: blinkingText 0.3s alternate infinite;
 }
 
 .cd-words-wrapper {
@@ -56,6 +56,10 @@
 @media (min-width: 768px) {
   .animated-text {
     transform: scale(1.2);
+  }
+
+  .cd-words-wrapper, .blc, .blinking {
+    font-size: 45px;
   }
 }
 
