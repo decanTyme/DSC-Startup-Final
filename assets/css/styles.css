@@ -7,6 +7,10 @@ h1, h2 {
   color: #226E93;
 }
 
+#splash {
+  margin-top: 2rem;
+}
+
 #sec-2 {
   padding-top: 2rem;
 }
@@ -45,6 +49,10 @@ h1, h2 {
     
   p, .btn {
     font-size: 0.9rem;
+  }
+
+  #splash {
+    margin-top: 1rem;
   }
 
   #sec-2 {
