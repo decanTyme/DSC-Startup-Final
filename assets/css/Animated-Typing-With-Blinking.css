@@ -1,6 +1,7 @@
 .blinking {
   font-size: 35px;
-  animation: blinkingText 0.3s alternate infinite;
+  -webkit-animation: blinkingText 0.3s alternate infinite;
+          animation: blinkingText 0.3s alternate infinite;
 }
 
 .cd-words-wrapper {

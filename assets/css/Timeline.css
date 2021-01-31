@@ -13,6 +13,7 @@
   content: '';
   position: absolute;
   width: 6px;
+  background: #226E93;
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(34,110,147,1) 5%, rgba(34,110,147,1) 50%, rgba(34,110,147,1) 95%, rgba(255,255,255,1) 100%);
   top: 0;
   bottom: 0;
