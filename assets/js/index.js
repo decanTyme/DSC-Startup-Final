@@ -2,7 +2,7 @@ const contents = document.querySelectorAll(".time-content");
 
 const Optn = {
   threshold: 0,
-  rootMargin: "0px 0px -500px 0px"
+  rootMargin: "0px 0px -450px 0px"
 };
 
 const timelineObs = new IntersectionObserver(function (el, timelineObs) {
