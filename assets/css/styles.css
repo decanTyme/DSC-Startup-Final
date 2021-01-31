@@ -1,6 +1,14 @@
-h1 {
+html {
+  scroll-snap-type: y proximity;
+}
+
+h1,h2 {
   color: #226E93;
 }
+
+/* p {
+  text-indent: 3rem;
+} */
 
 .btn-color {
   background-color: #226E93;
@@ -22,6 +30,12 @@ h1 {
   color: #226E93;
   background-color: #18597911;
   border: 1px solid #226E93;
+}
+
+@media (min-width:768px) {
+  .snap-in {
+    scroll-snap-align: start;
+  }
 }
 
 @media (min-width:768px) {
